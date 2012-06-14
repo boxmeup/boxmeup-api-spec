@@ -1,5 +1,5 @@
 var frisby = require('frisby');
-var config = require('./config');
+var config = require('../config');
 
 frisby.create('Test a successful user login')
 	.post(config.HOST + '/users/login', {email: config.EMAIL, password: config.PASSWORD})

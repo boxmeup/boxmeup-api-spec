@@ -6,7 +6,7 @@
 	"dependencies": {
 		"frisby": ">= 0.4.6"
 	},
-	"main": "jasmine-node --verbose .",
+	"main": "jasmine-node --verbose ./spec/",
 	"engines": {
 		"node": ">= 0.6.11"
 	}
