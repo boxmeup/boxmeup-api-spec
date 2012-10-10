@@ -1,6 +1,6 @@
 {
 	"name": "boxemup-api-test",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Service test cases for public REST API.",
 	"author": "Chris Saylor <cjsaylor@gmail.com>",
 	"dependencies": {
