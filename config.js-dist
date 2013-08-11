@@ -2,6 +2,5 @@ module.exports = {
 	HOST: "https://www.boxmeupapp.com/api",
 	EMAIL: "",
 	PASSWORD: "",
-	API_KEY: "",
-	SECRET_KEY: ""
+	TOKEN: ""
 }
