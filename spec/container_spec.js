@@ -61,3 +61,10 @@ frisby.create('Test adding and editing a container.')
 		.toss();
 	})
 .toss();
+
+frisby.create('Search containers.')
+	.addHeader('Authentication', util.generateHeader(config.TOKEN))
+	.get(config.HOST + '/containers/search?query=test')
+	.expectStatus(200)
+.toss();
+
