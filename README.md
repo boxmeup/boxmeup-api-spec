@@ -20,8 +20,14 @@ your host value and credentials.
 
 ## Running
 
-The ```main``` directive in ```package.json``` indicates how to run:
+The ```test``` directive in ```package.json``` indicates how to run:
 
 ```shell
 $ jasmine-node ./spec/ --verbose
+```
+
+or simply use:
+
+```shell
+$ npm test
 ```
