@@ -2,47 +2,22 @@ FORMAT: 1A
 HOST: https://api.boxmeupapp.com
 
 # Boxmeup API
-Boxmeup is a service for cataloging contents of containers and providing a means of searching
-and identifying the contents.
+Boxmeup is a web and mobile application to help users keep track of what they have in their containers and how to find items in specific containers.
 
-# Group Users
-You may only interact with containers that are associated to a user token.
+## User [/users]
 
-## Notes Collection [/notes]
-### List all Notes [GET]
-+ Response 200 (application/json)
+## Login [POST]
 
-        [{
-          "id": 1, "title": "Jogging in park"
-        }, {
-          "id": 2, "title": "Pick-up posters from post-office"
-        }]
-
-### Create a Note [POST]
 + Request (application/json)
 
-        { "title": "Buy cheese and bread for breakfast." }
+        {
+            "email": "Email address",
+            "password": "Password for authentication",
+            "application": "Application name using this API"
+        }
 
-+ Response 201 (application/json)
-
-        { "id": 3, "title": "Buy cheese and bread for breakfast." }
-
-## Note [/notes/{id}]
-A single Note object with all its details
-
-+ Parameters
-    + id (required, number, `1`) ... Numeric `id` of the Note to perform action with. Has example value.
-
-### Retrieve a Note [GET]
 + Response 200 (application/json)
 
-    + Header
-
-            X-My-Header: The Value
-
-    + Body
-
-            { "id": 2, "title": "Pick-up posters from post-office" }
-
-### Remove a Note [DELETE]
-+ Response 204
+        {
+            "token": "1cd2b6edc30afc5e0e8084c83601506de69f53a3"
+        }
